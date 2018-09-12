@@ -39,9 +39,9 @@ class LoremTest extends TestCase
         $faker = self::getFaker();
         $this->assertContains($faker->char, self::getWordList());
         $this->assertContains($faker->chars[0], self::getWordList());
-        $this->assertContains(mb_substr($faker->word, 0, 1), self::getWordList());
-        $this->assertContains(mb_substr($faker->words[0], 0, 1), self::getWordList());
-        $this->assertContains(mb_substr($faker->text, 0, 1), self::getWordList());
+        $this->assertContains(mb_substr($faker->word, 0, 1, static::getEncoding()), self::getWordList());
+        $this->assertContains(mb_substr($faker->words[0], 0, 1, static::getEncoding()), self::getWordList());
+        $this->assertContains(mb_substr($faker->text, 0, 1, static::getEncoding()), self::getWordList());
     }
 
     public function testWordCharacterNumberLessThanOrEqual4()

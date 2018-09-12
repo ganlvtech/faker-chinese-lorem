@@ -4,6 +4,8 @@ Faker is a PHP library that generates fake data for you. See [fzaninotto/Faker](
 
 Faker Chinese Lorem let you generate Lorem in Chinese.
 
+[![Build Status](https://travis-ci.org/ganlvtech/faker-chinese-lorem.svg?branch=master)](https://travis-ci.org/ganlvtech/faker-chinese-lorem)
+
 ## Installation
 
 ```sh
